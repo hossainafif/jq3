@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="stylesheet" href="vendor/wow-master/css/animate.css">
+
+
+    <title>Jquary Plugin</title>
+    <script src="https://kit.fontawesome.com/fd75a29db5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 animate__bounce">
+                <div class="jq">
+                    <h2 class="counter">1,234,567.00</h2>
+                    <span>$</span><span class="counter">1.99</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="wow slideInLeft s" data-wow-duration="2s" data-wow-delay="3s">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="wow slideInRight s" data-wow-duration="2s" data-wow-delay="3s">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="s wow bounceInDown"></div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="s wow bounce"></div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="s wow flash"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="s wow flip"></div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="s wow flipInX"></div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="s wow lightSpeedIn"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="s wow slideOutLeft"></div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="s wow slideInRight"></div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="s wow bounceInDown" data-wow-duration="2s" data-wow-delay="3s"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jquary plugin -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="vendor/counter-up-master/jquery.counterup.min.js"></script>
+    <script src="vendor/wow-master/js/wow.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+            new WOW().init();
+            // wow = new WOW({
+            //     boxClass: 'wow', // default
+            //     animateClass: 'animated', // default
+            //     offset: 0, // default
+            //     mobile: true, // default
+            //     live: true // default
+            // })
+            // wow.init();
+        });
+    </script>
+</body>
+
+</html>
